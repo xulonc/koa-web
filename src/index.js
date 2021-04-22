@@ -4,4 +4,3 @@ const sayHi = () => {
 
 sayHi();
 console.log('hello');
-console.log('hello');
