@@ -1,0 +1,25 @@
+# 运行需要安装REST Client 插件
+# ext install humao.rest-client
+
+
+GET https://httpbin.org/get
+    ?page=2
+    &pageSize=10
+###
+
+POST https://httpbin.org/post HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"alice",
+    "age":22,
+    "date":"{{$timestamp}}",
+    "guid":"{{$guid}}"
+}
+
+###
+
+POST https://httpbin.org/post HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+name=alice&age=22&married=false
